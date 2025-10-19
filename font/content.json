@@ -1,10 +1,22 @@
-{
-    "to": "cc",
-    "from": "MounT1ver",
-    "recipient": "可爱的黄老师",
-    "sender": "泽",
-    "title": "eLuvLetter",
-    "stamp": "./img/stamp.png",
-    "bgm": "./bgm/bgm.mp3",
-    "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果那天...^600没有^200和你相遇<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想我可能^600不会^200那样伤心<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那样难过<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不会^200那样失魂落魄<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是^600如果^200没有遇见你<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我就^200无法感受到^600这样开心<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这样^200快乐<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这样^200阳光<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这样^200温柔<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这样^200幸福^200的时光<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^600所以现在^600你还好吗？<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我...^600希望^200你可以开心地度过每一天"
-}
+// 页面加载完成后执行
+window.onload = function() {
+    // 设置收信人名称（保持不变）
+    document.getElementById('recipient').innerText = "可爱的黄老师";
+
+    // 修改为新的信件内容（添加自然延迟，段落间停顿稍长，句内轻柔衔接）
+    const letterContent = "夏的风轻旋，^800<br><br>" +  // 首句后稍作停顿
+                         "山泽与星初次相见——^1200<br><br>" +  // 破折号后停顿强调
+                         "星子眨动，跌进泽的眼，^1000<br>" +
+                         "山的剪影，烙在星的梦田。^1200<br><br>" +  // 段落间停顿稍长
+                         "时光短，爱却已沉淀，^1000<br>" +
+                         "泽的温柔，漫过星的孤单。^1200<br><br>" +
+                         "山的胸膛，是避风的岸，^1000<br>" +
+                         "任宇宙浩渺，护星不颤。^1200<br><br>" +
+                         "星啊，你尽管璀璨，^1000<br>" +
+                         "山泽的守护，是永远的伞。^1200<br><br>" +
+                         "纵黑夜深，纵路漫漫，^1000<br>" +
+                         "山河之诺，刻进每寸流年。";  // 结尾无额外延迟，自然收束
+
+    // 保持原渲染方式不变
+    document.querySelector('.letter').innerHTML = letterContent;
+};
